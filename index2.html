@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>数字猜猜乐</title>
+  <style>
+      body {
+          padding: 100px 0;
+          background-color: #005542;
+          color: #a8c4a5;
+          text-align: center;
+          font-size: 2.5em;
+      }
+
+      input {
+          padding: 5px 20px;
+          height: 50px;
+          background-color: #004a43;
+          border: 1px solid #c0c0c0;
+          box-sizing: border‐box;
+          color: #ffffff;
+          font-size: 20px;
+      }
+
+      button {
+          padding: 5px 20px;
+          height: 50px;
+          font-size: 16px;
+      }
+
+      div {
+          width: 800px;
+          height: 50px;
+          margin: 0 auto;
+      }
+  </style>
+  <script src="homeworkscript.js"></script>
+</head>
+<body>
+  <h1>猜数字游戏</h1>
+  <p>Hi，我将生成一个 0 ‐ 100 间的随机数，试试能不能在仅有的 10 机会之内猜对它吧～</p>
+  <input type="number" min="0" max="100" name="num" placeholder="随便猜" id="num" />
+  <button id="start">试一试</button><br>
+  <p>猜过的数字: <span id="preNum"></span></p>
+  <div id="show" style="display:none"></div>
+  <button id="restart">重新开始</button>
+</body>
+</html>
